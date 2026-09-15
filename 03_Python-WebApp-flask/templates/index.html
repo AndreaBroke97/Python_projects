@@ -1,0 +1,16 @@
+<h1>ciaoo</h1>
+
+{% if variable%}
+    <p>{{variable}}</p>
+{% else %}
+    <p>carrello vuoto</p>
+{% endif %}
+
+
+<form action="{{ url_for('index_again', variabile = 'GIANNA')}}" method = "POST" style = "display": inline;>
+<button type = "submit">Qui passiamo GIANNA</button>
+</form>
+
+<form action="{{ url_for('index')}}" style = "display": inline;>
+<button type = "submit">Qui non passiamo nulla</button>
+</form>

@@ -1,0 +1,17 @@
+{
+    "id": 20,
+    "name": "raticate",
+    "height": 7,
+    "weight": 185,
+    "types": [
+        "normal"
+    ],
+    "stats": {
+        "hp": 55,
+        "attack": 81,
+        "defense": 60,
+        "special-attack": 50,
+        "special-defense": 70,
+        "speed": 97
+    }
+}

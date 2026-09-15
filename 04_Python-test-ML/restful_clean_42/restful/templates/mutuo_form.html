@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Richiesta Mutuo</title>
+    
+</head>
+<body>
+    <h1>Richiesta Mutuo</h1>
+
+    <form action="/mutuo" method="POST">
+<!--action = "/mutuo": quando l'utente clicca invia, i dati vanno alla route /mutuo di app.py
+con method = "POST": flask li legge con request.form-->
+
+        <label>Genere</label>
+        <select name="Gender">
+            <option value="Male">Maschio</option>
+            <option value="Female">Femmina</option>
+        </select>
+
+        <label>Stato civile</label>
+        <select name="Married">
+            <option value="Yes">Sposato/a</option>
+            <option value="No">Non sposato/a</option>
+        </select>
+
+        <label>Numero dipendenti</label>
+        <select name="Dependents">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3 o più</option>
+        </select>
+
+        <label>Titolo di studio</label>
+        <select name="Education">
+            <option value="Graduate">Laureato/a</option>
+            <option value="Not Graduate">Non laureato/a</option>
+        </select>
+
+        <label>Lavoratore autonomo</label>
+        <select name="Self_Employed">
+            <option value="No">No</option>
+            <option value="Yes">Sì</option>
+        </select>
+        
+         <label>Reddito richiedente (€/mese)</label>
+        <input type="number" name="ApplicantIncome" required>
+
+        <label>Reddito co-richiedente (€/mese) — 0 se assente</label>
+        <input type="number" name="CoapplicantIncome" value="0" required>
+
+        <label>Importo mutuo (migliaia €)</label>
+        <input type="number" name="LoanAmount" required>
+
+        <label>Durata mutuo (mesi)</label>
+        <select name="Loan_Amount_Term">
+            <option value="360">360 mesi (30 anni)</option>
+            <option value="240">240 mesi (20 anni)</option>
+            <option value="180">180 mesi (15 anni)</option>
+            <option value="120">120 mesi (10 anni)</option>
+        </select>
+
+        <label>Storia creditizia</label>
+        <select name="Credit_History">
+            <option value="1.0">Buona</option>
+            <option value="0.0">Cattiva</option>
+        </select>
+
+        <label>Zona immobile</label>
+        <select name="Property_Area">
+            <option value="Urban">Urbana</option>
+            <option value="Semiurban">Semiurbana</option>
+            <option value="Rural">Rurale</option>
+        </select>
+
+        <button type="submit">Calcola previsione</button>
+
+
+
+
+    </form>
+
+
+
+
+</body>
+</html>

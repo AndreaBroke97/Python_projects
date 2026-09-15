@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pokémon</title>
+</head>
+<body>
+	{% if creature %}
+		<h1>{{ creature.name }}</h1>
+		<p><strong>Height:</strong> {{ creature.height }}</p>
+		<p><strong>Weight:</strong> {{ creature.weight }}</p>
+		<p><strong>Types:</strong> {{ creature.types }}</p>
+		<p><strong>Stats:</strong> {{ creature.stats }}</p>
+		<a href="{{ url_for('edit_creature', id=creature.id) }}">Edit</a><br>
+	{% else %}
+		<p>No creature selected.</p>
+	{% endif %}
+
+	<a href="{{ url_for('index') }}">Back to list</a>
+</body>
+</html>
+

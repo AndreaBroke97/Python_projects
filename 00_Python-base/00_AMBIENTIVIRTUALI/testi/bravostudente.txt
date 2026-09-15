@@ -1,0 +1,4 @@
+sono uno studente
+quando qualcosa mi serve
+lo scrivo in un file di testo
+cosi' posso recuperarlo quando serve

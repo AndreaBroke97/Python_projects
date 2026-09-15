@@ -1,0 +1,33 @@
+<mxfile host="65bd71144e">
+    <diagram id="-5FpTjelOD1T7tYCeH6f" name="Page-1">
+        <mxGraphModel dx="904" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="veicolo&lt;div&gt;+modello&lt;/div&gt;&lt;div&gt;+anno&lt;/div&gt;&lt;div&gt;---------------------------------------+accelerate()&lt;/div&gt;&lt;div&gt;+steering(grade)&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="220" width="170" height="221" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Motorcycle&lt;div&gt;+Gear/Cambio&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="510" width="160" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="auto&lt;div&gt;+doors&lt;/div&gt;&lt;div&gt;-----------------&lt;/div&gt;" style="whiteSpace=wrap;html=1;rotation=0;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="510" width="150" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="4">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="270" y="560" as="sourcePoint"/>
+                        <mxPoint x="350" y="490" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="450" y="550" as="sourcePoint"/>
+                        <mxPoint x="530" y="550" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
